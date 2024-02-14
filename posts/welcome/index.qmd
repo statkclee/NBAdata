@@ -1,12 +1,38 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+title: "NBA 프로젝트 시작합니다."
+author: "아빠"
 date: "2024-02-10"
-categories: [news]
+categories: [news, projects]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+# 프로필 이미지
 
-![](thumbnail.jpg)
+23-24시즌 NBA 우승팀을 예측하는 프로젝트에 꼭 필요한 프로필 사진을 
+아들이 구해줬습니다.
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+
+![](../../images/kakaotalk_20240213.jpg)
+
+# 아빠의 의견
+
+자세가 좀 그래서 아들에게 물어봤더니... 스테픈 커리가 위닝샷 찍었을 때의 모습이라고 합니다.
+아무래도 자세가 마음에 들지 않음... ㅠㅠ
+
+# 챗GPT
+
+::: {.panel-tabset}
+### 프롬프트
+
+이미지를 설명해줘.
+
+### 반환값
+
+
+이 이미지에는 농구 경기장에서 열정적으로 기뻐하는 한 남성 선수의 모습이 담겨 있습니다. 그는 검은색과 노란색의 유니폼을 입고 있고, 유니폼에는 '30'이라는 숫자와 스폰서 로고가 보입니다. 그는 한쪽 무릎을 꿇고 앉아서 두 주먹을 움켜쥐고 있으며, 입을 크게 벌리고 웃고 있는 표정입니다. 배경에는 다른 선수들과 관중들도 보이며, 관중들은 경기의 흥미진진한 순간에 반응하는 것 같습니다. 이 선수는 스포츠 경기에서 뭔가 중요한 성과를 달성한 것으로 보이는데, 이는 보통 득점이나 중요한 경기의 승리를 의미할 수 있습니다.
+
+### 챗GPT
+
+![](../../images/curry_chatgpt.jpg)
+
+:::
+
