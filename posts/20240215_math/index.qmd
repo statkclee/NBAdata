@@ -1,0 +1,91 @@
+---
+title: "수학문제 풀이 546"
+author: "아빠"
+date: "2024-02-10"
+categories: [수학, 중3, 대수]
+editor_options: 
+  chunk_output_type: console
+---
+
+# 문제
+
+다음 수학문제를 푸세요.
+
+
+![수학문제](problem.jpg)
+
+# 수작업 풀이
+
+1. 첫번째 다항식을 인수분해한다.
+1. 두번재 다항식을 인수분해한다.
+1. $a$, $b$ 값을 구한다.
+1. $a - b$ 값을 구한다.
+
+![](solution.jpg)
+
+# 컴퓨터 풀이
+
+```{r}
+library(reticulate)
+```
+
+
+## 첫번째 다항식
+
+```{python}
+from sympy import symbols, factor
+
+# Define the variable
+x = symbols('x')
+
+# Define the polynomials
+polynomial1 = 9*x**2 - 1
+polynomial2 = 3*x**2 + 2*x - 1
+
+# Factorize the polynomials
+factorized1 = factor(polynomial1)
+factorized2 = factor(polynomial2)
+
+factorized1, factorized2
+```
+
+## 두번째 다항식
+
+```{python}
+from sympy import symbols, factor
+
+# Define the variable
+x = symbols('x')
+
+# Define the polynomials
+polynomial3 = x**2 + 5*x - 6
+polynomial4 = 5*x**2 - 3*x - 2
+
+# Factorize the polynomials
+factorized3 = factor(polynomial3)
+factorized4 = factor(polynomial4)
+
+factorized3, factorized4
+```
+
+## $a$, $b$ 값
+
+따라서, $a = 3$, $b = -1$ 이기 때문에 $3 - (-1) = 4$ 다.
+
+:::{.callout-note}
+### 공통인수 추출 코드
+
+```{python}
+# Extracting the common factor from factorized_polynomial3 and factorized_polynomial4
+common_factor = None
+
+# Check for common factors
+for factor in factorized3.args:
+    if factor in factorized4.args:
+        common_factor = factor
+        break
+
+common_factor
+```
+
+:::
